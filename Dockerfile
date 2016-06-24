@@ -3,8 +3,7 @@ FROM		ubuntu:14.04
 MAINTAINER	Vinod Halaharvi <vinod.halaharvi@gmail.com>
 
 
-RUN	apt-key update && \
-	apt-get update && \
+RUN	apt-get update && \
 	apt-get install -y ruby2.1 && \
 	gem install geminabox && \
 	mkdir -p /opt/geminabox/
